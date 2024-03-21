@@ -22,8 +22,9 @@ const App = () => {
   const addUser = (mobile, password, email) => {
     const newUser = {
       mobile,
-      password,
       email,
+      username: email,
+      password,
     };
     users.push(newUser);
   };
